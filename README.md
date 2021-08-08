@@ -21,7 +21,7 @@ statement working the way I thought it should be working.
 
 Something like:
 
-          if nextlaunchdate === todaysdate {
+          if nextlaunchdate-nearest-to-today === listednextlaunchdate {
             return apply css style to grid item
           } else {
             return 
