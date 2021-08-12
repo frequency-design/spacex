@@ -7,7 +7,7 @@ const combineddata = data
 
 // filter and sort
 .filter(year => year.date_local >= '2021-01-01' && year.date_local <= '2021-31-12')
-.sort((a, b) => new Date(b.date_local) - new Date(a.date_local));
+.sort((b, a) => new Date(b.date_local) - new Date(a.date_local));
 
 
 
@@ -81,7 +81,7 @@ function cssNumber(launches){
     })[0];
 
     // obtain array position minus difference and apply value to css nth-child
-    const getpos = orderedDates.indexOf(nextDate) - 12;
+    const getpos = orderedDates.indexOf(nextDate) + 1;
 
 
     // conditional statement adds CSS class to the grid 
